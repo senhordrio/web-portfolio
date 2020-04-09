@@ -12,7 +12,7 @@
 }
 
 .projectText {
-  color: white;
+  color: #f7f7f7;
   padding-right: 5%;
   max-width: 30%;
 }
@@ -28,8 +28,8 @@
 }
 
 .projectPhoto img {
-  width: 560px;
-  height: 280px;
+  max-width: 480px;
+  max-height: 360px;
   box-shadow: 15px 15px rgb(20, 20, 20);
 }
 

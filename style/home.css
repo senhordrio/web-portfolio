@@ -1,18 +1,17 @@
-
 .bodyWhiteBackgroundColor {
   background-color: #f7f7f7;
 }
 
-.bodyBlackBackgroundColor{
+.bodyBlackBackgroundColor {
   background-color: black;
 }
 
 #home {
   display: block;
-  font-family:"Open sans";
+  font-family: "Open sans";
 }
 
-.flexContainerHome{
+.flexContainerHome {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -20,27 +19,52 @@
   align-items: center;
 }
 
-.profileMargin{
+.profileMargin {
   margin-bottom: 10%;
 }
 
-.animationMargin{
+.animationMargin {
   margin-top: 10%;
 }
 
-.occupation{
+.occupation {
   margin-block-start: 0;
   margin-block-end: 0;
   letter-spacing: 0.2em;
+  margin-left: 7px
 }
 
-.nameButtonEffect{
+.cursor {
+  z-index: -1;
+  position: absolute;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  background: black;
+  animation: blink 2s infinite;
+  width: 7px;
+  height: 40.5px;
+}
+
+@keyframes blink {
+  0% {
+    background: #f7f7f7;
+  }
+  50% {
+    background: black;
+  }
+  100% {
+    background: #f7f7f7;
+  }
+}
+
+.nameButtonEffect {
   font-weight: lighter;
-  letter-spacing: 5px;
+  letter-spacing: 0.2em;
   font-size: 2em;
   display: flex;
   margin-block-start: 0;
   margin-block-end: 0;
+  margin-left: 7px;
   color: black;
   text-decoration: none;
   background-image: linear-gradient(black 0, black 100%);
@@ -50,7 +74,7 @@
   background-position: 0 -0.1em;
 }
 
-.nameButtonEffect:hover{
+.nameButtonEffect:hover {
   color: white;
   background-size: 100% 100%;
 }
@@ -63,10 +87,10 @@
 .nameButtonEffect:hover::after {
   content: "Sobre";
   display: inline-flex;
-  width: 308px;
+  width: 331px;
 }
 
-.navigateToProjects{
+.navigateToProjects {
   font-size: 0.8em;
   text-align: center;
   margin-block-start: 0;
@@ -81,9 +105,9 @@
   background-position: 0 -0.1em;
 }
 
-.navigateToProjects:hover{
+.navigateToProjects:hover {
   color: white;
-  background-size: 100% 100%;;
+  background-size: 100% 100%;
 }
 
 a:link {

@@ -21,16 +21,16 @@
 }
 
 .buttonEffect:hover {
-  color: white;
+  color: #f7f7f7;
   background-size: 100% 100%;
 }
 
 .buttonEffectOnAbout {
   margin-block-start: 0;
   margin-block-end: 0;
-  color: white;
+  color: #f7f7f7;
   text-decoration: none;
-  background-image: linear-gradient(white 0, white 100%);
+  background-image: linear-gradient(#f7f7f7 0, #f7f7f7 100%);
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: background 0.2s;
