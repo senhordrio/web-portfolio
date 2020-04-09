@@ -12,7 +12,7 @@
 }
 
 .projectText {
-  color: #f7f7f7;
+  color: #eaeaea;
   padding-right: 5%;
   max-width: 30%;
 }
@@ -47,7 +47,7 @@
 .navigateToHomeFromProjects {
   position: absolute;
   top: 80vh;
-  left: 83vw;
+  left: 80vw;
   margin-block-start: 0;
   margin-block-end: 0;
   color: white;

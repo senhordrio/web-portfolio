@@ -1,0 +1,32 @@
+.loader{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;  
+    z-index: 10;
+    background-color: #eaeaea;
+    height: 100vh;
+}
+
+.logo{
+    border-color: #eaeaea;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-family: "Open sans";
+    margin: 0;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

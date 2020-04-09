@@ -3,6 +3,7 @@ var $home = $("#home");
 var $about = $("#about");
 var $projects = $("#projects");
 var $contactComponent = $(".contact");
+var $loader = $(".loader")
 
 //animations
 var $bodyBackground = $(".bodyWhiteBackgroundColor");
@@ -17,48 +18,7 @@ var $contactColors = $(".buttonEffect");
 
 //methods
 
-$(function () {
-  $navigateToAbout.click(function () {
-    $home.hide();
-    $bodyBackground
-      .removeClass("bodyWhiteBackgroundColor")
-      .addClass("bodyBlackBackgroundColor");
-    $about.show();
-    $contactPosition.css({ transition: "0.2s", left: "435px" });
-    $contactColors.removeClass("buttonEffect").addClass("buttonEffectOnAbout");
-  });
-
-  $navigateToHomeFromAbout.click(function () {
-    $about.hide();
-    $contactPosition.css({ left: "200px" });
-    $bodyBackground
-      .removeClass("bodyBlackBackgroundColor")
-      .addClass("bodyWhiteBackgroundColor");
-    $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
-    $home.addClass("fadeIn");
-    $home.show();
-  });
-
-  $navigateToProjects.click(function () {
-    $home.hide();
-    $bodyBackground
-      .removeClass("bodyWhiteBackgroundColor")
-      .addClass("bodyBlackBackgroundColor");
-    $contactComponent.hide();
-    $projects.show();
-  });
-
-  $navigateToHomeFromProjects.click(function () {
-    $projects.hide();
-    $bodyBackground
-      .removeClass("bodyBlackBackgroundColor")
-      .addClass("bodyWhiteBackgroundColor");
-    $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
-    $home.addClass("fadeIn");
-    $home.show();
-    $contactComponent.addClass("fadeIn");
-    $contactComponent.show();
-  });
+$(document).ready(function () {
 
   VANTA.NET({
     el: ".homeAnimation",
@@ -75,5 +35,59 @@ $(function () {
     color: 0xffffff,
     backgroundColor: 0x0,
     showDots: true,
+  });
+  
+  $home.css("display","block").addClass("fadeIn");
+  $contactComponent.css("display","block").addClass("fadeIn");
+  $loader.css("display","none");
+
+  $(function () {
+    $navigateToAbout.click(function () {
+      $home.hide();
+      $bodyBackground
+        .removeClass("bodyWhiteBackgroundColor")
+        .addClass("bodyBlackBackgroundColor");
+      $about.show();
+      $contactPosition.css({ transition: "0.2s", left: "435px" });
+      $contactColors
+        .removeClass("buttonEffect")
+        .addClass("buttonEffectOnAbout");
+    });
+
+    $navigateToHomeFromAbout.click(function () {
+      $about.hide();
+      $contactPosition.css({ left: "200px" });
+      $bodyBackground
+        .removeClass("bodyBlackBackgroundColor")
+        .addClass("bodyWhiteBackgroundColor");
+      $contactColors
+        .removeClass("buttonEffectOnAbout")
+        .addClass("buttonEffect");
+      $home.addClass("fadeIn");
+      $home.show();
+    });
+
+    $navigateToProjects.click(function () {
+      $home.hide();
+      $bodyBackground
+        .removeClass("bodyWhiteBackgroundColor")
+        .addClass("bodyBlackBackgroundColor");
+      $contactComponent.hide();
+      $projects.show();
+    });
+
+    $navigateToHomeFromProjects.click(function () {
+      $projects.hide();
+      $bodyBackground
+        .removeClass("bodyBlackBackgroundColor")
+        .addClass("bodyWhiteBackgroundColor");
+      $contactColors
+        .removeClass("buttonEffectOnAbout")
+        .addClass("buttonEffect");
+      $home.addClass("fadeIn");
+      $home.show();
+      $contactComponent.addClass("fadeIn");
+      $contactComponent.show();
+    });
   });
 });

@@ -1,5 +1,5 @@
 .contact {
-  display: block;
+  display: none;
   font-family: "Open Sans";
   position: absolute;
   top: 80%;
@@ -21,16 +21,16 @@
 }
 
 .buttonEffect:hover {
-  color: #f7f7f7;
+  color: #eaeaea;
   background-size: 100% 100%;
 }
 
 .buttonEffectOnAbout {
   margin-block-start: 0;
   margin-block-end: 0;
-  color: #f7f7f7;
+  color: #eaeaea;
   text-decoration: none;
-  background-image: linear-gradient(#f7f7f7 0, #f7f7f7 100%);
+  background-image: linear-gradient(#eaeaea 0, #eaeaea 100%);
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: background 0.2s;
