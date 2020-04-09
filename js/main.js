@@ -29,16 +29,16 @@ $(document).ready(function () {
     scale: 1.0,
     scaleMobile: 1.0,
     color: 0x0,
-    points: 5.0,
-    maxDistance: 21.0,
-    spacing: 10.0,
+    points: 6.0,
+    maxDistance: 20.0,
+    spacing: 8.0,
     color: 0xffffff,
     backgroundColor: 0x0,
     showDots: true,
   });
   
-  $home.css("display","block").addClass("fadeIn");
-  $contactComponent.css("display","block").addClass("fadeIn");
+  $home.css("display","block").addClass("fadeInLoader");
+  $contactComponent.css("display","block").addClass("fadeInLoader");
   $loader.css("display","none");
 
   $(function () {
@@ -63,7 +63,7 @@ $(document).ready(function () {
       $contactColors
         .removeClass("buttonEffectOnAbout")
         .addClass("buttonEffect");
-      $home.addClass("fadeIn");
+      $home.removeClass("fadeInLoader").addClass("fadeIn");
       $home.show();
     });
 
@@ -86,7 +86,7 @@ $(document).ready(function () {
         .addClass("buttonEffect");
       $home.addClass("fadeIn");
       $home.show();
-      $contactComponent.addClass("fadeIn");
+      $contactComponent.removeClass("fadeInLoader").addClass("fadeIn");
       $contactComponent.show();
     });
   });

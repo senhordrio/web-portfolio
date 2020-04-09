@@ -1,3 +1,8 @@
+@font-face{
+  font-family: montserrat;
+  src: url(/assets/Montserrat-Bold.ttf);
+}
+
 .bodyWhiteBackgroundColor {
   background-color:#eaeaea;
 }
@@ -8,7 +13,7 @@
 
 #home {
   display: none;
-  font-family: "Open sans";
+  font-family: montserrat;
 }
 
 .flexContainerHome {
@@ -28,6 +33,8 @@
 }
 
 .occupation {
+  font-family: "Open sans";
+  font-weight: 300;
   margin-block-start: 0;
   margin-block-end: 0;
   letter-spacing: 0.2em;
@@ -42,13 +49,13 @@
   background: black;
   animation: blink 2s infinite;
   width: 5px;
-  height: 40.5px;
+  height: 36px;
 }
 
 
 .nameButtonEffect {
   font-weight: lighter;
-  letter-spacing: 0.2em;
+  letter-spacing: 5px;
   font-size: 2em;
   display: flex;
   margin-block-start: 0;
@@ -76,10 +83,11 @@
 .nameButtonEffect:hover::after {
   content: "Sobre";
   display: inline-flex;
-  width: 331px;
+  width: 326px;
 }
 
 .navigateToProjects {
+  font-family: "Open sans";
   font-size: 0.8em;
   text-align: center;
   margin-block-start: 0;
@@ -119,6 +127,10 @@ a:visited {
 
 .fadeIn {
   animation: fadeIn 0.3s ease-out;
+}
+
+.fadeInLoader{
+  animation: fadeIn 0.6s ease-out;
 }
 
 @keyframes blink {
