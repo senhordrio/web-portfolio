@@ -84,19 +84,18 @@
   background-position: 0 -0.1em;
 }
 
+.nameButtonEffect::after {
+  content: "Adriano Oliveira";
+}
+
 .nameButtonEffect:hover {
   color: white;
   background-size: 100% 100%;
 }
 
-.nameButtonEffect::after {
-  content: "Adriano Oliveira";
-  display: flex;
-}
 
 .nameButtonEffect:hover::after {
   content: "Sobre";
-  display: inline-flex;
   width: 326px;
 }
 
