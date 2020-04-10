@@ -37,8 +37,8 @@ $(document).ready(function () {
   });
 
   $loader.hide();
-  $home.fadeIn("1000");
-  $contactComponent.fadeIn("1000");
+  $home.fadeIn(800);
+  $contactComponent.fadeIn(800);
 
   $navigateToAbout.click(function () {
     $home.hide();
@@ -57,8 +57,7 @@ $(document).ready(function () {
       .removeClass("bodyBlackBackgroundColor")
       .addClass("bodyWhiteBackgroundColor");
     $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
-    $home.removeClass("fadeInLoader").fadeIn();
-    $home.show();
+    $home.fadeIn();
   });
 
   $navigateToProjects.click(function () {
@@ -78,7 +77,6 @@ $(document).ready(function () {
     $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
     $home.fadeIn();
     $home.show();
-    $contactComponent.removeClass("fadeInLoader").fadeIn();
-    $contactComponent.show();
+    $contactComponent.fadeIn();
   });
 });
