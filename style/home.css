@@ -1,6 +1,21 @@
 @font-face{
-  font-family: montserrat;
+  font-family: "Montserrat Bold";
   src: url(/assets/Montserrat-Bold.ttf);
+}
+
+@font-face{
+  font-family: "Montserrat Light";
+  src: url(/assets/Montserrat-Light.ttf);
+}
+
+@font-face{
+  font-family: "Montserrat Medium";
+  src: url(/assets/Montserrat-Medium.ttf);
+}
+
+@font-face{
+  font-family: "Montserrat Thin";
+  src: url(/assets/Montserrat-Thin.ttf);
 }
 
 .bodyWhiteBackgroundColor {
@@ -13,7 +28,7 @@
 
 #home {
   display: none;
-  font-family: montserrat;
+  font-family: "Montserrat Thin";
 }
 
 .flexContainerHome {
@@ -54,7 +69,6 @@
 
 
 .nameButtonEffect {
-  font-weight: lighter;
   letter-spacing: 5px;
   font-size: 2em;
   display: flex;
