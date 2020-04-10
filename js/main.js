@@ -20,7 +20,7 @@ var $contactColors = $(".buttonEffect");
 
 $(document).ready(function () {
   VANTA.NET({
-    el: ".homeAnimation",
+    el: ".animationWrapper",
     mouseControls: true,
     touchControls: true,
     minHeight: 350.0,
@@ -36,9 +36,9 @@ $(document).ready(function () {
     showDots: true,
   });
 
-  $loader.hide();
   $home.fadeIn(800);
   $contactComponent.fadeIn(800);
+  $loader.fadeOut(100);
 
   $navigateToAbout.click(function () {
     $home.hide();
@@ -52,7 +52,7 @@ $(document).ready(function () {
 
   $navigateToHomeFromAbout.click(function () {
     $about.hide();
-    $contactPosition.css({ left: "200px" });
+    $contactPosition.css({ left: "15%" });
     $bodyBackground
       .removeClass("bodyBlackBackgroundColor")
       .addClass("bodyWhiteBackgroundColor");

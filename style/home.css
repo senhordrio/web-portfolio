@@ -29,22 +29,24 @@
 #home {
   display: none;
   font-family: "Montserrat Thin";
+  height: 100vh;
 }
 
-.flexContainerHome {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.profileMargin {
+.profile {
+  position: absolute;
+  top: 20%;
+  left: 15%;
   margin-bottom: 10%;
 }
 
-.animationMargin {
-  margin-top: 10%;
+.animationWrapper{
+  height: 400px;
+}
+
+.projectWrapper {
+  position: absolute;
+  top: 20%;
+  left: 60%;
 }
 
 .occupation {
