@@ -76,7 +76,7 @@ $(document).ready(function () {
       .removeClass("bodyBlackBackgroundColor")
       .addClass("bodyWhiteBackgroundColor");
     $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
-    $home.addClass("fadeIn");
+    $home.fadeIn();
     $home.show();
     $contactComponent.removeClass("fadeInLoader").fadeIn();
     $contactComponent.show();
