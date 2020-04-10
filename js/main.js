@@ -29,18 +29,17 @@ $(document).ready(function () {
     scale: 1.0,
     scaleMobile: 1.0,
     color: 0x0,
-    points: 6.0,
+    points: 5.0,
     maxDistance: 20.0,
     spacing: 8.0,
     color: 0xffffff,
     backgroundColor: 0x0,
     showDots: true,
   });
-  
-  $home.css("display","block").addClass("fadeInLoader");
-  $contactComponent.css("display","block").addClass("fadeInLoader");
-  $loader.css("display","none");
 
+  $home.show().addClass("fadeInLoader");
+  $contactComponent.show().addClass("fadeInLoader");
+  $loader.fadeOut("1000");
   $(function () {
     $navigateToAbout.click(function () {
       $home.hide();
