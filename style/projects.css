@@ -39,7 +39,7 @@
   color: rgb(20, 20, 20);
   font-size: 20em;
   font-weight: bold;
-  position: sticky;
+  position: fixed;
   top: 45vh;
   left: -2%;
   animation: slideFromRightTitle 0.3s ease-out;
