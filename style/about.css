@@ -9,6 +9,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 10%;
+  margin-left: 15%;
+  animation: slideFadeInToLeft 0.5s ease-out;
 }
 
 .aboutText {
@@ -25,14 +27,15 @@
 }
 
 .aboutPageTitle {
-  z-index: -1;
+  z-index: -5;
   color: rgb(20, 20, 20);
-  font-size: 20em;
+  font-size: 15em;
   font-weight: bold;
-  position: fixed;
-  top: -15vh;
-  left: 43%;
-  animation: slideTitleFromLeft 0.3s ease-out;
+  position: absolute;
+  top: 27%;
+  left: -15%;
+  transform: rotate(90deg);
+  animation: slideTitleUpToDown 0.5s ease;
 }
 
 .navigateToHomeFromAbout {
@@ -42,8 +45,9 @@
   display: inline-block;
   background-color: transparent;
   color:#eaeaea;
+  opacity: 0.6;
   position: fixed;
-  font-size: 1.5em;
+  font-size: 1em;
   z-index: 5;
   border: 1px solid #eaeaea;
   cursor: pointer;
@@ -55,16 +59,29 @@
 }
 
 .navigateToHomeFromAbout:hover{
-  background-color: white;
+  background-color: #eaeaea;
   color:black;
+  font-weight: bold;
+  opacity: 1;
+  transition: ease-in .2s;
 }
 
+@keyframes slideFadeInToLeft{
+  0%{
+    opacity: 0%;
+    transform: translate(-150px);
+  }
+  100%{
+    opacity: 100%;
+    transform: translate(0px)
+  }
+}
 
-@keyframes slideTitleFromLeft {
+@keyframes slideTitleUpToDown {
   0% {
-    transform: translateX(-150px);
+    transform: translateY(-750px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }

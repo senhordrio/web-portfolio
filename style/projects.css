@@ -10,6 +10,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10%;
+  animation: slideFromRight 0.5s ease-out;
 }
 
 .projectText {
@@ -37,12 +38,13 @@
 .projectPageTitle {
   z-index: -1;
   color: rgb(20, 20, 20);
-  font-size: 20em;
+  font-size: 11em;
   font-weight: bold;
   position: fixed;
-  top: 45vh;
-  left: -2%;
-  animation: slideFromRightTitle 0.3s ease-out;
+  top: 34vh;
+  left: -16%;
+  transform: rotate(90deg);
+  animation: slideTitleUpToDown 0.5s ease;
 }
 
 .navigateToHomeFromProjects {
@@ -51,9 +53,10 @@
   text-decoration: none;
   display: inline-block;
   background-color: transparent;
+  opacity: 0.6;
   color:#eaeaea;
   position: fixed;
-  font-size: 1.5em;
+  font-size: 1em;
   z-index: 5;
   border: 1px solid #eaeaea;
   cursor: pointer;
@@ -65,16 +68,29 @@
 }
 
 .navigateToHomeFromProjects:hover {
-  background-color: white;
+  background-color: #eaeaea;
   color:black;
-  
+  font-weight: bold;
+  opacity: 1;
+  transition: ease-in .2s;
 }
 
-@keyframes slideFromRightTitle {
+@keyframes slideFromRight {
   0% {
+    opacity: 0;
     transform: translateX(150px);
   }
   100% {
+    opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes slideTitleUpToDown {
+  0% {
+    transform: translateY(-750px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
   }
 }

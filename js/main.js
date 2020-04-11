@@ -46,7 +46,7 @@ $(document).ready(function () {
       .removeClass("bodyWhiteBackgroundColor")
       .addClass("bodyBlackBackgroundColor");
     $about.show();
-    $contactPosition.css({ transition: "0.2s", left: "27.8%" });
+    $contactPosition.css({ transition: "0.5s", left: "42%" });
     $contactColors.removeClass("buttonEffect").addClass("buttonEffectOnAbout");
   });
 
