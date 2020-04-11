@@ -3,7 +3,7 @@
 
 <head>
     <title>senhordrio</title>
-    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="icon" type="image/png" href="assets/img/icon.png" sizes="16x16">
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/projects.css">
@@ -13,27 +13,21 @@
 </head>
 
 <body class="bodyWhiteBackgroundColor">
-    <div class="loader">
+    <section class="loader">
         <div>
-            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 35 27">
-                <g id="Group_1" data-name="Group 1" transform="translate(-422 -67)">
-                    <text id="AO" transform="translate(424 87)" font-size="20"
-                        font-family="Montserrat-ExtraLight, Montserrat" font-weight="200" letter-spacing="0.02em">
-                        <tspan x="0" y="0">A</tspan>
-                    </text>
-                    <text id="AO" transform="translate(424 87)" font-size="20"
-                        font-family="Montserrat-ExtraLight, Montserrat" font-weight="200" letter-spacing="0.02em">
-                        <tspan x="14" y="0">O</tspan>
-                    </text>
-                    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(422 67)" fill="rgba(255,255,255,0)"
-                        stroke="#000" stroke-width="0.6">
-                        <rect width="35" height="27" stroke="none" />
-                        <rect x="0.3" y="0.3" width="34.4" height="26.4" fill="none" />
-                    </g>
+            <svg xmlns="http://www.w3.org/2000/svg" width="130" height="120" viewBox="0 0 35 27">
+                <g id="logo" transform="translate(-418 -68)">
+                  <text id="AO" transform="translate(424 87)" fill="#fff" font-size="15" font-family="Montserrat-ExtraLight, Montserrat" font-weight="200" letter-spacing="0.02em"><tspan x="0" y="0">AO</tspan></text>
+                  <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(418 68)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-width="0.6">
+                    <rect width="35" height="27" stroke="none"/>
+                    <rect x="0.3" y="0.3" width="34.4" height="26.4" fill="none"/>
+                  </g>
                 </g>
-            </svg>
+              </svg>
+              
+
         </div>
-    </div>
+    </section>
     <section id="home">
         <div class="profile">
             <a href="#about" class="navigateToAbout">
@@ -67,11 +61,12 @@
                     Vestibulum quis luctus nisl, posuere ullamcorper nisi. Suspendisse tempor,
                     ante at lobortis lacinia, lacus metus vulputate libero, non dignissim tellus ipsum tempor orci.
                 </p>
-                <a href="#home">
-                    <p class="navigateToHomeFromAbout">voltar</p>
-                </a>
             </div>
         </div>
+        <a href="#home">
+            <button href="#home" class="navigateToHomeFromAbout slideLeft">X
+            </button>
+        </a>
     </section>
 
     <section id="projects">
@@ -89,9 +84,36 @@
                 <img src="assets/img/compjunior2.png">
             </div>
         </div>
-        <a href="#home">
-            <p class="navigateToHomeFromProjects slideRight">voltar</p>
-        </a>
+        <div class="flexContainerProjects slideRight">
+            <div class="projectText">
+                <h1></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum sapien,
+                    tincidunt a elementum quis, tristique ac lorem. Integer ullamcorper diam eu tortor viverra,
+                    eget fringilla magna auctor.</p>
+            </div>
+            <div class="projectPhoto">
+                <img src="assets/img/compjunior1.jpeg">
+            </div>
+        </div>
+        <div class="flexContainerProjects slideRight">
+            <div class="projectText">
+                <h1>Twitter bot</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum sapien,
+                    tincidunt a elementum quis, tristique ac lorem. Integer ullamcorper diam eu tortor viverra,
+                    eget fringilla magna auctor.</p>
+            </div>
+            <div class="projectPhoto">
+                <blockquote class="twitter-tweet" data-theme="dark">
+                    <p lang="en" dir="ltr">You could use a witcher.</p>&mdash; Geralt of Rivia 🐺 (@geraltbot) <a
+                        href="https://twitter.com/geraltbot/status/1246316179444191232?ref_src=twsrc%5Etfw">April 4,
+                        2020</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <button href="#home" class="navigateToHomeFromProjects slideRight">X
+        </button>
     </section>
 
     <section>

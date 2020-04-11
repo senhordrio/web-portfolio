@@ -1,5 +1,6 @@
 #projects {
   display: none;
+  position: absolute;
   font-family: "Open Sans";
 }
 
@@ -38,32 +39,35 @@
   color: rgb(20, 20, 20);
   font-size: 20em;
   font-weight: bold;
-  position: fixed;;
+  position: absolute;;
   top: 45vh;
   left: -2%;
   animation: slideFromRightTitle 0.3s ease-out;
 }
 
 .navigateToHomeFromProjects {
-  position: absolute;
-  top: 80vh;
-  left: 80vw;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: white;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-family: "Montserrat Thin";
+  text-align: center;
   text-decoration: none;
-  background-image: linear-gradient(white 0, white 100%);
-  background-size: 0 100%;
-  background-position: 0 -0.1em;
-  background-repeat: no-repeat;
-  transition: background 0.2s;
+  display: inline-block;
+  background-color: transparent;
+  color:#eaeaea;
+  position: fixed;
+  font-size: 1.5em;
+  z-index: 5;
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  top: 10vh;
+  left: 90vw;
+  border: 1px solid #eaeaea;
 }
 
 .navigateToHomeFromProjects:hover {
-  color: black;
-  background-size: 100% 100%;
+  background-color: white;
+  color:black;
+  
 }
 
 @keyframes slideFromRightTitle {

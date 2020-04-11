@@ -1,21 +1,11 @@
-@font-face{
-  font-family: "Montserrat Bold";
-  src: url(/assets/Montserrat-Bold.ttf);
-}
-
-@font-face{
-  font-family: "Montserrat Light";
-  src: url(/assets/Montserrat-Light.ttf);
-}
-
-@font-face{
-  font-family: "Montserrat Medium";
-  src: url(/assets/Montserrat-Medium.ttf);
-}
 
 @font-face{
   font-family: "Montserrat Thin";
   src: url(/assets/Montserrat-Thin.ttf);
+}
+
+body{
+  margin: 0;
 }
 
 .bodyWhiteBackgroundColor {
@@ -29,7 +19,6 @@
 #home {
   display: none;
   font-family: "Montserrat Thin";
-  height: 100vh;
 }
 
 .profile {
@@ -51,32 +40,31 @@
 
 .occupation {
   font-family: "Open sans";
+  letter-spacing: 0.08em;
+  font-size: 1em;
   font-weight: 300;
   margin-block-start: 0;
   margin-block-end: 0;
-  letter-spacing: 0.2em;
-  margin-left: 5px
 }
 
 .cursor {
   z-index: -1;
   position: absolute;
-  margin-block-start: 0;
-  margin-block-end: 0;
   background: black;
   animation: blink 2s infinite;
-  width: 5px;
-  height: 36px;
+  width: 1%;
+  height: 54%;
 }
 
 
 .nameButtonEffect {
-  letter-spacing: 5px;
-  font-size: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
   display: flex;
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-left: 5px;
   color: black;
   text-decoration: none;
   background-image: linear-gradient(black 0, black 100%);
@@ -98,7 +86,6 @@
 
 .nameButtonEffect:hover::after {
   content: "Sobre";
-  width: 326px;
 }
 
 .navigateToProjects {
