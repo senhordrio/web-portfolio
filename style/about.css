@@ -20,9 +20,14 @@
   padding-left: 5%;
 }
 
-.flexContainerAbout img {
+.photoWrapper{
   height: 420px;
   width: 350px;
+}
+
+.flexContainerAbout img {
+  height: auto;
+  width: 100%;
   box-shadow: 15px 15px rgb(20, 20, 20);
 }
 
@@ -83,5 +88,23 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 992px){
+  .flexContainerAbout{
+    margin-left: 0;
+    width: 100vw;
+    justify-content: center;
+  }
+  .aboutPageTitle{
+    display: none;
+  }
+  .flexContainerAbout img{
+    box-shadow: none;
+  }
+  .aboutText{
+    font-size: 1em;
+    max-width: 90%;
   }
 }

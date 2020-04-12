@@ -25,8 +25,9 @@ body{
 }
 
 .animationWrapper{
-  max-width: 400px;
-  max-height: 350px;
+  display: block;
+  width: 400px;
+  height: 400px;
 }
 
 .projectWrapper {
@@ -119,6 +120,23 @@ a:visited {
 .slideRight {
   animation: slideFromRight 0.6s ease-out;
   animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 992px) {
+  .profile {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    margin-bottom: 10%;
+  }
+  .projectWrapper {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+  .animationWrapper{
+    display: none;
+  }
 }
 
 @keyframes blink {
