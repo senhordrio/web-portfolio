@@ -1,82 +1,63 @@
 //components
-var $home = $("#home");
-var $about = $("#about");
-var $projects = $("#projects");
-var $contactComponent = $(".contact");
-var $loader = $(".loader");
-
-//animations
-var $bodyBackground = $(".bodyWhiteBackgroundColor");
+var home = document.querySelector("#home");
+var about = document.querySelector("#about");
+var projects = document.querySelector("#projects");
+var contactComponent = document.querySelector(".contact");
+var loader = document.querySelector(".loader");
 
 //buttons
-var $navigateToAbout = $(".navigateToAbout");
-var $navigateToProjects = $(".navigateToProjects");
-var $navigateToHomeFromProjects = $(".navigateToHomeFromProjects");
-var $navigateToHomeFromAbout = $(".navigateToHomeFromAbout");
-var $contactPosition = $(".contact");
-var $contactColors = $(".buttonEffect");
+var navigateToAbout = document.querySelector(".navigateToAbout");
+var navigateToProjects = document.querySelector(".navigateToProjects");
+var navigateToHomeFromProjects = document.querySelector(".navigateToHomeFromProjects");
+var navigateToHomeFromAbout = document.querySelector(".navigateToHomeFromAbout");
+var contactColors = document.querySelector(".buttonEffect");
 
 //methods
 
-$(document).ready(function () {
-  VANTA.NET({
-    el: ".animationWrapper",
-    mouseControls: true,
-    touchControls: true,
-    minHeight: 350.0,
-    minWidth: 400.0,
-    scale: 1.0,
-    scaleMobile: 1.0,
-    color: 0x0,
-    points: 5.0,
-    maxDistance: 20.0,
-    spacing: 8.0,
-    color: 0xffffff,
-    backgroundColor: 0x0,
-    showDots: true,
-  });
+VANTA.NET({
+  el: ".animationWrapper",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 350.0,
+  minWidth: 400.0,
+  scale: 1.0,
+  scaleMobile: 1.0,
+  color: 0x0,
+  points: 5.0,
+  maxDistance: 20.0,
+  spacing: 8.0,
+  color: 0xffffff,
+  backgroundColor: 0x0,
+  showDots: true,
+});
 
-  $home.fadeIn(800);
-  $contactComponent.fadeIn(800);
-  $loader.fadeOut(100);
+loader.style.display = "none";
+home.style.display = "block";
+contactComponent.style.display = "block";
 
-  $navigateToAbout.click(function () {
-    $home.hide();
-    $bodyBackground
-      .removeClass("bodyWhiteBackgroundColor")
-      .addClass("bodyBlackBackgroundColor");
-    $about.show();
-    $contactPosition.css({ transition: "0.5s", left: "42%" });
-    $contactColors.removeClass("buttonEffect").addClass("buttonEffectOnAbout");
-  });
+navigateToAbout.addEventListener("click", function () {
+  home.style.display = "none";
+  document.body.style.backgroundColor = "black";
+  about.style.display = "block";
+  contactColors.style.color = "black";
+});
 
-  $navigateToHomeFromAbout.click(function () {
-    $about.hide();
-    $contactPosition.css({ left: "15%" });
-    $bodyBackground
-      .removeClass("bodyBlackBackgroundColor")
-      .addClass("bodyWhiteBackgroundColor");
-    $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
-    $home.fadeIn();
-  });
+navigateToHomeFromAbout.addEventListener("click", function () {
+  about.style.display = "none";
+  document.body.style.backgroundColor = "#eaeaea"
+  home.style.display = "block"
+});
 
-  $navigateToProjects.click(function () {
-    $home.hide();
-    $bodyBackground
-      .removeClass("bodyWhiteBackgroundColor")
-      .addClass("bodyBlackBackgroundColor");
-    $contactComponent.hide();
-    $projects.show();
-  });
+navigateToProjects.addEventListener("click", function () {
+  home.style.display = "none";
+  document.body.style.backgroundColor = "black"
+  contactComponent.style.display = "none";
+  projects.style.display = "block";
+});
 
-  $navigateToHomeFromProjects.click(function () {
-    $projects.hide();
-    $bodyBackground
-      .removeClass("bodyBlackBackgroundColor")
-      .addClass("bodyWhiteBackgroundColor");
-    $contactColors.removeClass("buttonEffectOnAbout").addClass("buttonEffect");
-    $home.fadeIn();
-    $home.show();
-    $contactComponent.fadeIn();
-  });
+navigateToHomeFromProjects.addEventListener("click",  function () {
+  projects.style.display = "none";
+  document.body.style.backgroundColor = "#eaeaea"
+  home.style.display = "block"
+  contactComponent.style.display = "block";
 });

@@ -24,20 +24,3 @@
   color: #eaeaea;
   background-size: 100% 100%;
 }
-
-.buttonEffectOnAbout {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  color: #eaeaea;
-  text-decoration: none;
-  background-image: linear-gradient(#eaeaea 0, #eaeaea 100%);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: background 0.2s;
-  background-position: 0 -0.1em;
-}
-
-.buttonEffectOnAbout:hover {
-  color: black;
-  background-size: 100% 100%;
-}
