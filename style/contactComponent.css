@@ -6,6 +6,7 @@
   left: 15%;
   font-size: 0.8em;
   letter-spacing: 0.1em;
+  animation: FadeIn .3s ease-out;
   transition: .2s ease-out;
 }
 
@@ -41,4 +42,13 @@
 .buttonEffectAbout:hover{
   color: black;
   background-size: 100% 100%;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

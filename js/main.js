@@ -32,9 +32,9 @@ VANTA.NET({
 });
 
 
-loader.style.display = "none";
 home.style.display = "block";
 contact.style.display = "block";
+loader.style.display = "none";
 
 navigateToAbout.addEventListener("click", function () {
   home.style.display = "none";
