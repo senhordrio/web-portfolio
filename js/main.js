@@ -2,7 +2,8 @@
 var home = document.querySelector("#home");
 var about = document.querySelector("#about");
 var projects = document.querySelector("#projects");
-var contactComponent = document.querySelector(".contact");
+var contact = document.querySelector(".contact");
+var contactButtons = document.querySelectorAll(".buttonEffect");
 var loader = document.querySelector(".loader");
 
 //buttons
@@ -10,7 +11,6 @@ var navigateToAbout = document.querySelector(".navigateToAbout");
 var navigateToProjects = document.querySelector(".navigateToProjects");
 var navigateToHomeFromProjects = document.querySelector(".navigateToHomeFromProjects");
 var navigateToHomeFromAbout = document.querySelector(".navigateToHomeFromAbout");
-var contactColors = document.querySelector(".buttonEffect");
 
 //methods
 
@@ -31,27 +31,37 @@ VANTA.NET({
   showDots: true,
 });
 
+
 loader.style.display = "none";
 home.style.display = "block";
-contactComponent.style.display = "block";
+contact.style.display = "block";
 
 navigateToAbout.addEventListener("click", function () {
   home.style.display = "none";
   document.body.style.backgroundColor = "black";
   about.style.display = "block";
-  contactColors.style.color = "black";
+  contact.style.left = "42%";
+  for(let i = 0; i < contactButtons.length; i++){
+    contactButtons[i].classList.remove("buttonEffect");
+    contactButtons[i].classList.add("buttonEffectAbout");
+  }
 });
 
 navigateToHomeFromAbout.addEventListener("click", function () {
   about.style.display = "none";
   document.body.style.backgroundColor = "#eaeaea"
   home.style.display = "block"
+  contact.style.left = "15%";
+  for(let i = 0; i < contactButtons.length; i++){
+    contactButtons[i].classList.remove("buttonEffectAbout");
+    contactButtons[i].classList.add("buttonEffect");
+  }
 });
 
 navigateToProjects.addEventListener("click", function () {
   home.style.display = "none";
   document.body.style.backgroundColor = "black"
-  contactComponent.style.display = "none";
+  contact.style.display = "none";
   projects.style.display = "block";
 });
 
@@ -59,5 +69,5 @@ navigateToHomeFromProjects.addEventListener("click",  function () {
   projects.style.display = "none";
   document.body.style.backgroundColor = "#eaeaea"
   home.style.display = "block"
-  contactComponent.style.display = "block";
+  contact.style.display = "block";
 });

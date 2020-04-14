@@ -5,14 +5,15 @@
     z-index: 10;
     height: 100vh;
     background-color: black;
+    animation: FadeOut 0.3 ease-out;
 }
 
-@keyframes rotate{
-  from{
-    transform: rotateY(0deg);
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
   }
-  to{
-    transform: rotateY(360deg);
+  100% {
+    opacity: 0;
   }
 }
 
