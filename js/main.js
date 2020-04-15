@@ -41,7 +41,8 @@ navigateToAbout.addEventListener("click", function () {
   document.body.style.backgroundColor = "black";
   about.style.display = "block";
   contact.style.left = "42%";
-  for(let i = 0; i < contactButtons.length; i++){
+  let contactLength = contactButtons.length;
+  for(let i = 0; i < contactLength; i++){
     contactButtons[i].classList.remove("buttonEffect");
     contactButtons[i].classList.add("buttonEffectAbout");
   }
@@ -52,7 +53,8 @@ navigateToHomeFromAbout.addEventListener("click", function () {
   document.body.style.backgroundColor = "#eaeaea"
   home.style.display = "block"
   contact.style.left = "15%";
-  for(let i = 0; i < contactButtons.length; i++){
+  let contactLength = contactButtons.length;
+  for(let i = 0; i < contactLength; i++){
     contactButtons[i].classList.remove("buttonEffectAbout");
     contactButtons[i].classList.add("buttonEffect");
   }

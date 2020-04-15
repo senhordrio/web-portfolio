@@ -6,33 +6,50 @@
 
 .flexContainerProjects {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10%;
+  margin: 5% 15% 5% 15%;
   animation: slideFromRight 0.5s ease-out;
 }
 
 .projectText {
   color: #eaeaea;
-  padding-right: 5%;
-  max-width: 30%;
+  margin-bottom: 5%;
 }
 
 .projectText h1 {
   font-size: 3em;
-  margin-block-start: 0;
-  margin-block-end: 0;
+
 }
 
 .projectText p {
   font-size: 1.3em;
 }
 
-.projectPhoto img {
+.whatLearned {
+  color: #eaeaea;
+}
+
+.whatLearned h1{
+  font-size: 2em;
+}
+
+.whatLearned p{
+  font-size: 1em;
+}
+
+.projectPhoto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.projectPhoto img{
   max-width: 480px;
   max-height: 360px;
-  box-shadow: 15px 15px rgb(20, 20, 20);
+  margin-bottom: 2%;
 }
 
 .projectPageTitle {
