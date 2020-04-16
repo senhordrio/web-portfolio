@@ -12,7 +12,6 @@ var navigateToProjects = document.querySelector(".navigateToProjects");
 var navigateToHomeFromProjects = document.querySelector(".navigateToHomeFromProjects");
 var navigateToHomeFromAbout = document.querySelector(".navigateToHomeFromAbout");
 
-//methods
 
 VANTA.NET({
   el: ".animationWrapper",

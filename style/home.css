@@ -1,14 +1,7 @@
 
 body{
   margin: 0;
-}
-
-.bodyWhiteBackgroundColor {
   background-color:#eaeaea;
-}
-
-.bodyBlackBackgroundColor {
-  background-color: black;
 }
 
 #home {
