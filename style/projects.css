@@ -111,3 +111,10 @@
     transform: translateY(0px) rotate(90deg);
   }
 }
+@media screen and (max-width: 992px){
+  .projectPhoto img{
+    max-width: 240px;
+    max-height: 180px;
+    margin-bottom: 2%;
+  }
+}

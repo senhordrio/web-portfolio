@@ -20,14 +20,15 @@ body{
 
 .animationWrapper{
   display: block;
-  width: 400px;
-  height: 400px;
+
 }
 
 .projectWrapper {
   position: absolute;
   top: 20%;
   left: 60%;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .occupation {
@@ -119,18 +120,20 @@ a:visited {
 @media screen and (max-width: 992px) {
   .profile {
     position: absolute;
-    top: 20%;
-    left: 15%;
-    margin-bottom: 10%;
+    top: auto;
+    left: auto;
+    padding: 20% 0% 0% 15%;
   }
   .projectWrapper {
     position: absolute;
-    top: 30%;
-    left: 15%;
+    top: auto;
+    left: auto;
+    padding: 40% 0% 0% 15%;
   }
   .animationWrapper{
     display: none;
   }
+
 }
 
 @keyframes blink {
@@ -153,3 +156,4 @@ a:visited {
     opacity: 1;
   }
 }
+

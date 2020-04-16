@@ -102,6 +102,7 @@
   }
   .flexContainerAbout img{
     box-shadow: none;
+    max-width: 90%;
   }
   .aboutText{
     font-size: 1em;
