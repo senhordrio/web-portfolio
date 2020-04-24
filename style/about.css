@@ -17,12 +17,13 @@
   color: #eaeaea;
   font-size: 1.5em;
   max-width: 55%;
-  padding-left: 5%;
+  padding: 0% 5% 0% 5%;
 }
 
 .photoWrapper{
   height: 420px;
   width: 350px;
+
 }
 
 .flexContainerAbout img {
@@ -43,24 +44,31 @@
   animation: slideTitleUpToDown 0.5s ease;
 }
 
+.buttonWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.buttonWrapper a{
+  display: block;
+  height: 100%;
+}
+
 .navigateToHomeFromAbout {
   font-family: "Montserrat Thin";
-  text-align: center;
+  padding-bottom: 48px;
   text-decoration: none;
-  display: inline-block;
   background-color: transparent;
   color:#eaeaea;
   opacity: 0.6;
-  position: fixed;
-  font-size: 1em;
+  font-size: 2em;
   z-index: 5;
   border: 1px solid #eaeaea;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
-  top: 10vh;
-  left: 90vw;
-  border: 1px solid #eaeaea;
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
 }
 
 .navigateToHomeFromAbout:hover{
@@ -69,6 +77,10 @@
   font-weight: bold;
   opacity: 1;
   transition: ease-in .2s;
+}
+
+.contactOnAbout{
+  display: none;
 }
 
 @keyframes slideFadeInToLeft{
@@ -91,21 +103,32 @@
   }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1024px){
   .flexContainerAbout{
     margin-left: 0;
     width: 100vw;
-    justify-content: center;
+    justify-content: left;
   }
   .aboutPageTitle{
+    font-size: 5em;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideFadeInToLeft 0.3s ease-out;
+  }
+  .photoWrapper{
     display: none;
   }
-  .flexContainerAbout img{
-    box-shadow: none;
-    max-width: 90%;
-  }
   .aboutText{
-    font-size: 1em;
-    max-width: 90%;
+    max-width: 100%;
+  }
+  .photoWrapper{
+    height: 320px;
+    width: 300px;
+  }
+  .contactOnAbout{
+    padding: 5%;
+    display: block;
   }
 }

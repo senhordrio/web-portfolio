@@ -17,7 +17,7 @@ VANTA.NET({
   el: ".animationWrapper",
   mouseControls: true,
   touchControls: true,
-  minHeight: 350.0,
+  minHeight: 380.0,
   minWidth: 400.0,
   scale: 1.0,
   scaleMobile: 1.0,
@@ -35,7 +35,11 @@ home.style.display = "block";
 contact.style.display = "block";
 loader.style.display = "none";
 
+
 navigateToAbout.addEventListener("click", function () {
+  if(window.screen.width <= 1024){
+    contact.style.display = "none";
+  }
   home.style.display = "none";
   document.body.style.backgroundColor = "black";
   about.style.display = "block";
@@ -48,6 +52,7 @@ navigateToAbout.addEventListener("click", function () {
 });
 
 navigateToHomeFromAbout.addEventListener("click", function () {
+  contact.style.display = "block"
   about.style.display = "none";
   document.body.style.backgroundColor = "#eaeaea"
   home.style.display = "block"

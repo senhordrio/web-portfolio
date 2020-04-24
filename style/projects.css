@@ -68,20 +68,18 @@
   font-family: "Montserrat Thin";
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  padding-bottom: 48px;
   background-color: transparent;
   opacity: 0.6;
   color:#eaeaea;
-  position: fixed;
-  font-size: 1em;
+  font-size: 2em;
   z-index: 5;
   border: 1px solid #eaeaea;
   cursor: pointer;
   height: 40px;
-  width: 40px;
-  top: 10vh;
-  left: 90vw;
-  border: 1px solid #eaeaea;
+  width: 50px;
+  border: 1px solid transparent;
+
 }
 
 .navigateToHomeFromProjects:hover {
@@ -111,10 +109,36 @@
     transform: translateY(0px) rotate(90deg);
   }
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1024px){
+  .flexContainerProjects {
+    margin: 10% 10% 0% 5%;
+    animation: slideFromRight 0.5s ease-out;
+  }
+  .projectPageTitle{
+    font-size: 4em;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideFromRight 0.3s ease-out;
+  }
   .projectPhoto img{
-    max-width: 240px;
-    max-height: 180px;
-    margin-bottom: 2%;
+    max-width: 300px;
+    max-height: 210px;
+    margin-bottom: 10%;
+  }
+  .projectText p{
+    margin-top: 10%;
+    font-size: 1em;
+  }
+  .projectText h1{
+    font-size: 2em;
+  }
+  .whatLearned h1{
+    font-size: 1em;
+  }
+  
+  .whatLearned p{
+    font-size: 0.8em;
   }
 }
