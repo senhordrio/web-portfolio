@@ -90,12 +90,10 @@
 }
 
 .twitterWrapper{
-  max-width: 90vw;
+  max-width: 100vw;
 }
 
-.twitterWrapper blockquote{
-  width: 50%!important;
-}
+
 
 @keyframes slideFromRight {
   0% {
@@ -116,6 +114,13 @@
     transform: translateY(0px) rotate(90deg);
   }
 }
+
+@media screen and (max-width: 768px){
+  .twitterWrapper{
+    max-width: 320px;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .flexContainerProjects {
     margin: 10% 0% 0% 5%;
