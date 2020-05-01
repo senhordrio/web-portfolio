@@ -1,10 +1,9 @@
-
 #about {
-  display: none;
+  display: none;  
   font-family: "Open Sans";
 }
 
-.flexContainerAbout{
+.flexContainerAbout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -20,13 +19,12 @@
   padding: 0% 5% 0% 5%;
 }
 
-.photoWrapper{
+.photoWrapper {
   height: 420px;
   width: 350px;
-
 }
 
-.flexContainerAbout img {
+.photoWrapper img {
   height: auto;
   width: 100%;
   box-shadow: 15px 15px rgb(20, 20, 20);
@@ -44,13 +42,13 @@
   animation: slideTitleUpToDown 0.5s ease;
 }
 
-.buttonWrapper{
+.buttonWrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.buttonWrapper a{
+.buttonWrapper a {
   display: block;
   height: 100%;
 }
@@ -60,7 +58,7 @@
   padding-bottom: 48px;
   text-decoration: none;
   background-color: transparent;
-  color:#eaeaea;
+  color: #eaeaea;
   opacity: 0.6;
   font-size: 2em;
   z-index: 5;
@@ -71,26 +69,26 @@
   border: 1px solid transparent;
 }
 
-.navigateToHomeFromAbout:hover{
+.navigateToHomeFromAbout:hover {
   background-color: #eaeaea;
-  color:black;
+  color: black;
   font-weight: bold;
   opacity: 1;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
 }
 
-.contactOnAbout{
+.contactOnAbout {
   display: none;
 }
 
-@keyframes slideFadeInToLeft{
-  0%{
+@keyframes slideFadeInToLeft {
+  0% {
     opacity: 0%;
     transform: translate(-150px);
   }
-  100%{
+  100% {
     opacity: 100%;
-    transform: translate(0px)
+    transform: translate(0px);
   }
 }
 
@@ -103,13 +101,13 @@
   }
 }
 
-@media screen and (max-width: 1024px){
-  .flexContainerAbout{
+@media screen and (max-width: 1024px) {
+  .flexContainerAbout {
     margin-left: 0;
     width: 100vw;
     justify-content: left;
   }
-  .aboutPageTitle{
+  .aboutPageTitle {
     font-size: 5em;
     transform: rotate(0deg);
     position: absolute;
@@ -117,17 +115,18 @@
     left: 0;
     animation: slideFadeInToLeft 0.3s ease-out;
   }
-  .photoWrapper{
+  .photoWrapper {
     display: none;
   }
-  .aboutText{
+  .aboutText {
     max-width: 100%;
+    margin: 0% 1% 0% 1%;
   }
-  .photoWrapper{
+  .photoWrapper {
     height: 320px;
     width: 300px;
   }
-  .contactOnAbout{
+  .contactOnAbout {
     padding: 5%;
     display: block;
   }

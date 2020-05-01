@@ -1,6 +1,5 @@
 #projects {
   display: none;
-  position: absolute;
   font-family: "Open Sans";
 }
 
@@ -90,6 +89,14 @@
   transition: ease-in .2s;
 }
 
+.twitterWrapper{
+  max-width: 90vw;
+}
+
+.twitterWrapper blockquote{
+  width: 50%!important;
+}
+
 @keyframes slideFromRight {
   0% {
     opacity: 0;
@@ -123,15 +130,16 @@
     animation: slideFromRight 0.3s ease-out;
   }
   .projectPhoto{
+    width: 100%;
     justify-content: start;
+    margin-bottom: 0;
   }
   .projectPhoto img{
-    max-width: 300px;
-    max-height: 210px;
-    margin-bottom: 10%;
+    max-width: 95%;
+    margin-bottom: 8%;
   }
   .projectText p{
-    margin-right: 10%;
+    margin-right: 2%;
     margin-top: 10%;
     font-size: 1em;
   }
@@ -139,10 +147,11 @@
     font-size: 2em;
   }
   .whatLearned h1{
+    margin: 0;
     font-size: 1em;
   }
   
-  .whatLearned p{
+  .whatLearned li{
     font-size: 0.8em;
   }
 }
