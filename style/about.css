@@ -121,6 +121,7 @@
     display: none;
   }
   .aboutText {
+    font-size: 1.3em;
     max-width: 100%;
     margin: 0% 1% 0% 1%;
   }
@@ -129,7 +130,9 @@
     width: 300px;
   }
   .contactOnAbout {
-    padding: 5%;
+    padding: 6%;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
     display: block;
   }
 }

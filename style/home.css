@@ -60,7 +60,7 @@ body{
   background: black;
   animation: blink 2s infinite;
   width: 1%;
-  height: 54%;
+  height: 25px;
 }
 
 
@@ -147,10 +147,6 @@ a:visited {
   .animationWrapper{
     display: none;
   }
-  .cursor{
-    display: none;
-  }
-
 }
 
 @keyframes blink {
