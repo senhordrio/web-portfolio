@@ -1,6 +1,6 @@
 #about {
   display: none;  
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 }
 
 .flexContainerAbout {
@@ -8,13 +8,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 10%;
-  margin-left: 15%;
+  margin-left: 19.8%;
   animation: slideFadeInToLeft 0.5s ease-out;
 }
 
 .aboutText {
   color: #eaeaea;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 200;
   max-width: 55%;
   padding: 0% 5% 0% 5%;
@@ -34,11 +34,11 @@
 .aboutPageTitle {
   z-index: -5;
   color: rgb(20, 20, 20);
-  font-size: 15em;
-  font-weight: bold;
+  font-size: 17em;
+  font-weight: 600;
   position: absolute;
   top: 27%;
-  left: -15%;
+  left: -12%;
   transform: rotate(90deg);
   animation: slideTitleUpToDown 0.5s ease;
 }
@@ -103,14 +103,14 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1270px) {
   .flexContainerAbout {
     margin-left: 0;
     width: 100vw;
     justify-content: left;
   }
   .aboutPageTitle {
-    font-size: 5em;
+    font-size: 10em;
     transform: rotate(0deg);
     position: absolute;
     top: 0;
@@ -136,3 +136,7 @@
     display: block;
   }
 }
+
+
+
+

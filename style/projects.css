@@ -1,13 +1,13 @@
 #projects {
   display: none;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
 }
 
 .flexContainerProjects {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 5% 15% 5% 15%;
+  margin: 5% 15% 5% 20%;
   animation: slideFromRight 0.5s ease-out;
 }
 
@@ -19,12 +19,13 @@
 }
 
 .projectText h1 {
-  font-size: 3em;
-
+  font-size: 4em;
+  font-weight: 600;
 }
 
 .projectText p {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  
 }
 
 .whatLearned {
@@ -34,6 +35,7 @@
 
 .whatLearned h1{
   font-size: 2em;
+  font-weight: 600;
 }
 
 .whatLearned p{
@@ -49,7 +51,7 @@
 }
 
 .projectPhoto img{
-  max-width: 480px;
+  max-width: 560px;
   max-height: 360px;
   margin-bottom: 2%;
 }
@@ -57,8 +59,8 @@
 .projectPageTitle {
   z-index: -1;
   color: rgb(20, 20, 20);
-  font-size: 11em;
-  font-weight: bold;
+  font-size: 15em;
+  font-weight: 600;
   position: fixed;
   top: 34vh;
   left: -16%;
@@ -162,5 +164,45 @@
   
   .whatLearned li{
     font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1270px){
+  .flexContainerProjects {
+    margin: 10% 2% 0% 5%;
+    animation: slideFromRight 0.5s ease-out;
+  }
+  .projectPageTitle{
+    font-size: 10em;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideFromRight 0.3s ease-out;
+
+  }
+  .projectPhoto{
+    width: 100%;
+
+  }
+  .projectPhoto img{
+    max-width: 45%;
+    margin-bottom: 2%;
+  }
+  .projectText p{
+    margin-right: 1%;
+    margin-top: 2%;
+    font-size: 2em;
+  }
+  .projectText h1{
+    font-size: 3em;
+  }
+  .whatLearned h1{
+    margin: 2%;
+    font-size: 2em;
+  }
+  
+  .whatLearned li{
+    font-size: 1em;
   }
 }

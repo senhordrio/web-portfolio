@@ -17,8 +17,8 @@ VANTA.NET({
   el: ".animationWrapper",
   mouseControls: true,
   touchControls: true,
-  minHeight: 380.0,
-  minWidth: 400.0,
+  minHeight: 400.0,
+  minWidth: 440.0,
   scale: 1.0,
   scaleMobile: 1.0,
   color: 0x0,
@@ -37,7 +37,7 @@ loader.style.display = "none";
 
 
 navigateToAbout.addEventListener("click", function () {
-  if(window.screen.width <= 1024){
+  if(window.screen.width <= 1270){
     contact.style.display = "none";
   }
   home.style.display = "none";
