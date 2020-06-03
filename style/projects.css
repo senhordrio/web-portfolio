@@ -167,7 +167,7 @@
   }
 }
 
-@media screen and (max-width: 1270px){
+@media screen and (max-width: 1280px){
   .flexContainerProjects {
     margin: 10% 2% 0% 5%;
     animation: slideFromRight 0.5s ease-out;
