@@ -2,7 +2,7 @@
   display: none;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
-  bottom: 37%;
+  top: 61%;
   left: 15%;
   font-size: 1em;
   letter-spacing: 0.1em;
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 1280px){
   .contact{
-    bottom: 25%;
+    top: 75%;
   }
 }
 

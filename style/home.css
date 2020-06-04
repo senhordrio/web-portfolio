@@ -28,7 +28,7 @@ body{
 
 .profile {
   position: absolute;
-  top: 20%;
+  top: 27%;
   left: 15%;
   margin-bottom: 10%;
 }
@@ -41,7 +41,7 @@ body{
 
 .projectWrapper {
   position: absolute;
-  top: 20%;
+  top: 27%;
   left: 60%;
 }
 
@@ -130,6 +130,12 @@ a:visited {
   animation-delay: 0.5s;
 }
 
+@media screen and (max-width: 1280px) {
+  .projectWrapper {
+    left: 50%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .profile {
     position: absolute;
@@ -147,7 +153,6 @@ a:visited {
     display: none;
   }
 }
-
 
 
 @keyframes blink {

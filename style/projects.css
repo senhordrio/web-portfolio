@@ -59,8 +59,8 @@
 .projectPageTitle {
   z-index: -1;
   color: rgb(20, 20, 20);
-  font-size: 15em;
-  font-weight: 600;
+  font-size: 14em;
+  font-weight: 800;
   position: fixed;
   top: 34vh;
   left: -16%;
@@ -100,7 +100,6 @@
 }
 
 
-
 @keyframes slideFromRight {
   0% {
     opacity: 0;
@@ -124,6 +123,42 @@
 @media screen and (max-width: 768px){
   .twitterWrapper{
     max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .flexContainerProjects {
+    margin: 10% 5% 0% 5%;
+    animation: slideFromRight 0.5s ease-out;
+  }
+  .projectPageTitle{
+    font-size: 10em;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideFromRight 0.3s ease-out;
+
+  }
+  .projectPhoto img{
+    max-width: 45%;
+    margin-bottom: 2%;
+  }
+  .projectText p{
+    margin-right: 1%;
+    margin-top: 2%;
+    font-size: 2em;
+  }
+  .projectText h1{
+    font-size: 3em;
+  }
+  .whatLearned h1{
+    margin: 2%;
+    font-size: 2em;
+  }
+  
+  .whatLearned li{
+    font-size: 1em;
   }
 }
 
@@ -167,42 +202,3 @@
   }
 }
 
-@media screen and (max-width: 1280px){
-  .flexContainerProjects {
-    margin: 10% 2% 0% 5%;
-    animation: slideFromRight 0.5s ease-out;
-  }
-  .projectPageTitle{
-    font-size: 10em;
-    transform: rotate(0deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: slideFromRight 0.3s ease-out;
-
-  }
-  .projectPhoto{
-    width: 100%;
-
-  }
-  .projectPhoto img{
-    max-width: 45%;
-    margin-bottom: 2%;
-  }
-  .projectText p{
-    margin-right: 1%;
-    margin-top: 2%;
-    font-size: 2em;
-  }
-  .projectText h1{
-    font-size: 3em;
-  }
-  .whatLearned h1{
-    margin: 2%;
-    font-size: 2em;
-  }
-  
-  .whatLearned li{
-    font-size: 1em;
-  }
-}
