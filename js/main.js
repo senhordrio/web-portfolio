@@ -37,7 +37,7 @@ loader.style.display = "none";
 
 
 navigateToAbout.addEventListener("click", function () {
-  if(window.screen.width <= 1270){
+  if(window.screen.width <= 1280){
     contact.style.display = "none";
   }
   home.style.display = "none";

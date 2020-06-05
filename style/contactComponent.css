@@ -45,9 +45,9 @@
 }
 
 @media screen and (max-width: 1280px){
-  .contact{
-    top: 75%;
-  }
+    .contact{
+      top: 75%;
+    }
 }
 
 @keyframes FadeIn {
