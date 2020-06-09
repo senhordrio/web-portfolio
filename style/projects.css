@@ -126,7 +126,18 @@
   }
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1600px){
+  .flexContainerProjects {
+    margin: 10% 5% 0% 16%;
+    animation: slideFromRight 0.5s ease-out;
+  }
+  .projectPageTitle{
+    font-size: 12em;
+
+  }
+}
+
+@media screen and (max-width: 1366px){
   .flexContainerProjects {
     margin: 10% 5% 0% 5%;
     animation: slideFromRight 0.5s ease-out;

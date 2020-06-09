@@ -43,7 +43,13 @@ navigateToAbout.addEventListener("click", function () {
   home.style.display = "none";
   document.body.style.backgroundColor = "black";
   about.style.display = "block";
-  contact.style.left = "42%";
+  if(window.screen.width <= 1920){
+    contact.style.left = "42%";
+  }
+  if(window.screen.width <= 1366){
+    contact.style.left = "47%";
+    contact.style.top = "62%";
+  }
   let contactLength = contactButtons.length;
   for(let i = 0; i < contactLength; i++){
     contactButtons[i].classList.remove("buttonEffect");
