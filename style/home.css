@@ -132,7 +132,12 @@ a:visited {
 
 @media screen and (max-width: 1366px) {
   .projectWrapper {
+    top: 22%;
     left: 50%;
+  }
+  .profile {
+    position: absolute;
+    top: 22%;
   }
 }
 
