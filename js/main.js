@@ -48,7 +48,6 @@ navigateToAbout.addEventListener("click", function () {
   }
   if(window.screen.width <= 1366){
     contact.style.left = "47%";
-    contact.style.top = "62%";
   }
   let contactLength = contactButtons.length;
   for(let i = 0; i < contactLength; i++){
