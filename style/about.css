@@ -103,6 +103,19 @@
   }
 }
 
+@media screen and (max-width: 1600px) {
+  .flexContainerAbout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-left: 18%;
+    animation: slideFadeInToLeft 0.5s ease-out;
+  }
+  .aboutPageTitle{
+    font-size: 16em;
+  }
+}
 
 @media screen and (max-width: 1366px) {
   .flexContainerAbout {

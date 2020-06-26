@@ -2,7 +2,7 @@
   display: none;
   font-family: 'Open Sans', sans-serif;
   position: fixed;
-  top: 58%;
+  top: 61%;
   left: 15%;
   font-size: 1em;
   letter-spacing: 0.1em;
@@ -44,15 +44,23 @@
   background-size: 100% 100%;
 }
 
+
+
+@media screen and (max-width: 1600px){
+  .contact{
+    top: 64%;
+  }
+}
+
 @media screen and (max-width: 1366px){
   .contact{
-    top: 70%;
+    top: 65%;
   }
 }
 
 @media screen and (max-width: 1280px){
     .contact{
-      top: 73%;
+      top: 69%;
     }
 }
 

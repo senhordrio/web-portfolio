@@ -46,6 +46,9 @@ navigateToAbout.addEventListener("click", function () {
   if(window.screen.width <= 1920){
     contact.style.left = "42%";
   }
+  if(window.screen.width <= 1600){
+    contact.style.left = "44%";
+  }
   if(window.screen.width <= 1366){
     contact.style.left = "47%";
   }
