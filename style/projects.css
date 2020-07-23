@@ -8,7 +8,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 5% 15% 5% 20%;
-  animation: slideFromRight 0.5s ease-out;
 }
 
 .projectText {
@@ -21,16 +20,18 @@
 .projectText h1 {
   font-size: 4em;
   font-weight: 600;
+  animation: slideFromRight 0.3s ease-in-out;
 }
 
 .projectText p {
   font-size: 1.5em;
-  
+  animation: slideFromRight 0.6s ease-in-out;
 }
 
 .whatLearned {
   color: #e5dfdf;
   letter-spacing: 1px;
+  animation: slideFromRight 1.2s ease-in-out;
 }
 
 .whatLearned h1{
@@ -48,6 +49,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 5%;
+  animation: slideFromRight 0.9s ease-in-out;
 }
 
 .projectPhoto img{
@@ -103,7 +105,7 @@
 @keyframes slideFromRight {
   0% {
     opacity: 0;
-    transform: translateX(150px);
+    transform: translateX(300px);
   }
   100% {
     opacity: 1;

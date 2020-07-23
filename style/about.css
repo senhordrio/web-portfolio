@@ -9,7 +9,6 @@
   flex-wrap: wrap;
   margin-top: 14%;
   margin-left: 19.8%;
-  animation: slideFadeInToLeft 0.5s ease-out;
 }
 
 .aboutText {
@@ -18,11 +17,13 @@
   font-weight: 200;
   max-width: 55%;
   padding: 0% 5% 0% 5%;
+  animation: slideFadeInToLeft .3s ease-in-out;
 }
 
 .photoWrapper {
   height: 420px;
   width: 350px;
+  animation: slideFadeInToLeft .6s ease-in-out;
 }
 
 .photoWrapper img {
@@ -86,7 +87,7 @@
 @keyframes slideFadeInToLeft {
   0% {
     opacity: 0%;
-    transform: translate(-150px);
+    transform: translate(-300px);
   }
   100% {
     opacity: 100%;
