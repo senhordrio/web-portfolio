@@ -85,3 +85,19 @@ navigateToHomeFromProjects.addEventListener("click",  function () {
   home.style.display = "block"
   contact.style.display = "block";
 });
+
+var botaoSubir = document.querySelector(".botaoSubir");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    botaoSubir.style.display = "block";
+  } else {
+    botaoSubir.style.display = "none";
+  }
+}
+
+function subir() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

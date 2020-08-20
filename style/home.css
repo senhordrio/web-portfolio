@@ -1,22 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: black; 
+  background: black;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: rgb(20, 20, 20)
+  background: rgb(20, 20, 20);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #eaeaea; 
+  background: #eaeaea;
 }
 
-body{
+body {
   margin: 0;
-  background-color:#eaeaea;
+  background-color: #eaeaea;
 }
 
 #home {
@@ -33,7 +37,7 @@ body{
   margin-bottom: 10%;
 }
 
-.animationWrapper{
+.animationWrapper {
   display: block;
   max-width: 440px;
   max-height: 400px;
@@ -46,7 +50,7 @@ body{
 }
 
 .occupation {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.15em;
   font-size: 1em;
   font-weight: 400;
@@ -63,9 +67,8 @@ body{
   height: 25px;
 }
 
-
 .nameButtonEffect {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.7em;
   letter-spacing: 0.09em;
   display: flex;
@@ -89,13 +92,12 @@ body{
   background-size: 100% 100%;
 }
 
-
 .nameButtonEffect:hover::after {
   content: "Sobre";
 }
 
 .navigateToProjects {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   text-align: center;
   margin-block-start: 0;
@@ -141,7 +143,6 @@ a:visited {
   }
 }
 
-
 @media screen and (max-width: 992px) {
   .profile {
     position: absolute;
@@ -155,11 +156,10 @@ a:visited {
     left: auto;
     padding: 40% 0% 0% 15%;
   }
-  .animationWrapper{
+  .animationWrapper {
     display: none;
   }
 }
-
 
 @keyframes blink {
   0% {
@@ -181,4 +181,3 @@ a:visited {
     opacity: 1;
   }
 }
-
