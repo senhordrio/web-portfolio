@@ -99,6 +99,10 @@
   transition: ease-in .2s;
 }
 
+.navigateToHomeFromProjects:focus{
+  outline: none;
+}
+
 .twitterWrapper{
   max-width: 100vw;
 }
