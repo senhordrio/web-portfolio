@@ -1,16 +1,16 @@
 //components
-var home = document.querySelector("#home");
-var about = document.querySelector("#about");
-var projects = document.querySelector("#projects");
-var contact = document.querySelector(".contact");
-var contactButtons = document.querySelectorAll(".buttonEffect");
-var loader = document.querySelector(".loader");
+let home = document.querySelector("#home");
+let about = document.querySelector("#about");
+let projects = document.querySelector("#projects");
+let contact = document.querySelector(".contact");
+let contactButtons = document.querySelectorAll(".buttonEffect");
+let loader = document.querySelector(".loader");
 
 //buttons
-var navigateToAbout = document.querySelector(".navigateToAbout");
-var navigateToProjects = document.querySelector(".navigateToProjects");
-var navigateToHomeFromProjects = document.querySelector(".navigateToHomeFromProjects");
-var navigateToHomeFromAbout = document.querySelector(".navigateToHomeFromAbout");
+let navigateToAbout = document.querySelector(".navigateToAbout");
+let navigateToProjects = document.querySelector(".navigateToProjects");
+let navigateToHomeFromProjects = document.querySelector(".navigateToHomeFromProjects");
+let navigateToHomeFromAbout = document.querySelector(".navigateToHomeFromAbout");
 
 
 VANTA.NET({
@@ -86,7 +86,7 @@ navigateToHomeFromProjects.addEventListener("click",  function () {
   contact.style.display = "block";
 });
 
-var botaoSubir = document.querySelector(".botaoSubir");
+let botaoSubir = document.querySelector(".botaoSubir");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
